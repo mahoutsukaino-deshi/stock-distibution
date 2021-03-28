@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------------------
-# 日経平均(1)
+# 株価の変化率の分布を調べる
 # -------------------------------------------------------------------------------
 import warnings
 import math
@@ -12,8 +12,8 @@ import pandas as pd
 import pandas_datareader
 import matplotlib.pyplot as plt
 
-START_DATE = datetime.date(2000, 1, 1)
-END_DATE = datetime.date(2019, 12, 31)
+START_DATE = datetime.date(2011, 1, 1)
+END_DATE = datetime.date(2020, 12, 31)
 
 
 def get_stock(ticker, start_date, end_date):
